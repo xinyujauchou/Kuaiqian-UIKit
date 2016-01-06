@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:paddingTop="@dimen/dp_40"
+	android:paddingBottom="@dimen/dp_20"
+	android:paddingLeft="@dimen/dp_20"
+	android:paddingRight="@dimen/dp_20">
+
+	<ImageView
+		android:id="@+id/iv_state"
+		android:layout_width="@dimen/dp_55"
+		android:layout_height="@dimen/dp_55"
+		android:src="@mipmap/ic_billings_completed"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:id="@+id/tv_state"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/iv_state"
+		android:layout_marginTop="@dimen/dp_14"
+		android:textColor="@color/title_color"
+		android:textSize="@dimen/dp_17"
+		android:singleLine="true"
+		android:text="认购成功"
+		android:layout_centerHorizontal="true"/>
+
+	<TextView
+		android:id="@+id/tv_desc"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tv_state"
+		android:layout_marginTop="@dimen/dp_20"
+		android:textColor="@color/guide_color"
+		android:textSize="@dimen/dp_14"
+		android:text="请在我的-我的认购项目中查看认购详情"
+		android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

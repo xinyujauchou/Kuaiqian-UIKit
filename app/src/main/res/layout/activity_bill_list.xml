@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uikitcom.chaowang.uikit.BillListActivity"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingBottom="@dimen/dp_15"
+    android:paddingLeft="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_6">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:cacheColorHint="@color/transparent"
+        android:dividerHeight="3dp"
+        android:divider="@color/transparent"/>
+
+</RelativeLayout>

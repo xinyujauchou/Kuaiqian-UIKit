@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="cropImageStyle" format="reference" />
+
+    <!-- 带标签的EditTextView -->
+    <declare-styleable name="labelEdittext">
+        <attr name="label" format="reference|string"/>
+        <attr name="labelColor" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="horibalTextView">
+        <attr name="names" format="reference|string"/>
+        <attr name="status" format="reference|string"/>
+        <attr name="textSize" format="reference"/>
+        <attr name="textValueColor" format="reference"/>
+        <attr name="backgroundColor" format="reference|color"/>
+        <attr name="arrowVisibility">
+            <enum name="visible" value="0"/>
+            <enum name="gone" value="8"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="scrollTab">
+        <attr name="titles" format="reference|string"/>
+        <attr name="titleColor" format="reference|string"/>
+        <attr name="SelectMode">
+            <enum name="Block" value="0"/>
+            <enum name="Line" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StepLayout">
+        <attr name="step" format="integer" />
+    </declare-styleable>
+
+    <!-- 表单输入自定义属性 -->
+    <declare-styleable name="form_input_view">
+        <attr name="named" format="reference|string" />
+        <attr name="content" format="reference|string" />
+        <attr name="hint" format="reference|string" />
+        <attr name="mode" format="enum">(
+            <enum name="input" value="0" />
+            <enum name="select" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

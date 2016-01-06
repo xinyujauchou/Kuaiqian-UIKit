@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uikitcom.chaowang.uikit.KindsOfButtonActivity"
+    android:orientation="vertical">
+
+    <uikitcom.chaowang.uikit.widget.ImportantButton
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="可点击状态"/>
+
+    <uikitcom.chaowang.uikit.widget.ImportantButton
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:enabled="false"
+        android:text="不可点击状态"/>
+
+    <uikitcom.chaowang.uikit.widget.SecondaryButton
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="次要按钮"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <uikitcom.chaowang.uikit.widget.SecondaryButton
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_3"
+            android:layout_weight="1"/>
+
+        <uikitcom.chaowang.uikit.widget.ImportantButton
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_3"/>
+
+    </LinearLayout>
+
+    <uikitcom.chaowang.uikit.widget.DockButtonLayout
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15" />
+
+</LinearLayout>

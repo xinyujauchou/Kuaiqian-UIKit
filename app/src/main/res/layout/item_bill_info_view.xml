@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@drawable/white_with_border_selector"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+    <ImageView
+            android:id="@+id/icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_bill_movie"
+            android:scaleType="centerCrop" android:contentDescription="@null"/>
+
+
+
+    <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/icon"
+            android:layout_toEndOf="@id/icon"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:textSize="14sp"
+            android:textColor="@color/list_date_color"
+            android:text="09.11 12:43"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+    <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/title_color"
+            android:text="-1,000.0"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/icon"
+            android:layout_toEndOf="@id/icon"
+            android:layout_toLeftOf="@id/money"
+            android:layout_marginTop="@dimen/dp_12"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/list_name_color"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+    <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/tip_color"
+            android:text="交易成功"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+</RelativeLayout>

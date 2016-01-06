@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uikitcom.chaowang.uikit.TradeInfoActivity">
+
+    <uikitcom.chaowang.uikit.widget.TradeInfoHead
+        android:id="@+id/trandeInfoHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <uikitcom.chaowang.uikit.widget.TradeInfoContainer
+        android:id="@+id/trandeInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trandeInfoHead"/>
+
+    <uikitcom.chaowang.uikit.widget.ImportantButton
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="key_height">45.0dip</dimen>
+    <dimen name="key_real_height">40dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="back_height">45dip</dimen>
+    <dimen name="button_margin">10dip</dimen>
+    <dimen name="key_board_text">20sp</dimen>
+    <!-- 键盘按钮文字大小 -->
+    <dimen name="edit_min_height">45dip</dimen>
+    <!-- 输入框最低高度 -->
+    <dimen name="edit_middle_height">50dip</dimen>
+    <!-- 输入框中级高度 -->
+    <dimen name="padding_left">15dip</dimen>
+    <!-- 应用左边距离 -->
+    <dimen name="padding_top">15dip</dimen>
+    <!-- 应用上边距离 -->
+    <dimen name="margin_horizontal">15dip</dimen>
+    <dimen name="margin_vertical">15dip</dimen>
+    <dimen name="withdraw_empty_height">300dip</dimen>
+    <!-- 提现，设置密码中的空的填充高度 -->
+
+    <dimen name="dip5">5dip</dimen>
+    <!-- 5 dip -->
+
+    <dimen name="crop__bar_height">48dp</dimen>
+    <dimen name="table_item">40dip</dimen>
+    <!-- 表单item的高度 -->
+
+    <dimen name="text_size_title">19sp</dimen>
+    <dimen name="text_size_title_bar_btn">17sp</dimen>
+    <dimen name="key_text_size">15sp</dimen>
+    <dimen name="dp_minus_1">-1dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_minus_12">-12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_21">21dp</dimen>
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_27">27dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_38">38dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_44">44dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+    <dimen name="dp_55">55dp</dimen>
+    <dimen name="dp_57">57dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_68">68dp</dimen>
+    <dimen name="dp_74">74dp</dimen>
+    <dimen name="dp_85">85dp</dimen>
+    <dimen name="dp_88">88dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_146">146dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_160">160dp</dimen>
+    <dimen name="dp_190">190dp</dimen>
+    <dimen name="dp_135">135dp</dimen>
+    <dimen name="dp_137">137dp</dimen>
+    <dimen name="dp_266">266dp</dimen>
+
+    <dimen name="quota_tip_size">13sp</dimen>
+    <dimen name="quota_text_size">13sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_21">21sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_25">25sp</dimen>
+    <dimen name="sp_27">27sp</dimen>
+    <dimen name="sp_34">34sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+    <dimen name="sp_62">62sp</dimen>
+    <dimen name="edit_frame_height">45dp</dimen>
+    <dimen name="guide_margin_top">16dp</dimen>
+    <dimen name="guide_margin_bottom">6dp</dimen>
+
+    <!--
+    统一把文字信息分类，1.Title, 2.Label, 3.Guide, 4. Hint,  5. Value,
+    属于某一类的文字大小要保持统一
+    -->
+    <dimen name="title">19.0dp</dimen>
+    <dimen name="label">15.0dp</dimen>
+    <dimen name="guide">13.0dp</dimen>
+    <dimen name="hint">10.0dp</dimen>
+    <dimen name="value">15.0dp</dimen>
+    <dimen name="sub">12.0dp</dimen>
+
+    <dimen name="setting_about_split">2.0dp</dimen>
+    <dimen name="setting_about_margin_right">5.0dp</dimen>
+    <dimen name="search_condition_height">45dp</dimen>
+    <dimen name="list_view_item_height">45dp</dimen>
+    <dimen name="edit_text_height">30dp</dimen>
+    <dimen name="edit_text_margint_top">5dp</dimen>
+
+    <!-- sucurity validate -->
+    <dimen name="security_validate_edit_text_size">17sp</dimen>
+    <dimen name="security_validate_id_card_number_margin_top">20dp</dimen>
+    <dimen name="security_validate_iv_phone_margin_top">20dp</dimen>
+    <dimen name="security_validate_sms_resend_btn_width">150dp</dimen>
+    <dimen name="divider_height_2">2px</dimen>
+    <dimen name="divider_height_1">1px</dimen>
+    <dimen name="bank_icon_height">20dp</dimen>
+    <dimen name="divider_width_2">2px</dimen>
+    <dimen name="divider_width_1">1px</dimen>
+
+    <dimen name="timeline_card_dot_size">16dp</dimen>
+
+    <dimen name="my_fixed_amout_item_row_title_size">19.0dp</dimen>
+    <dimen name="my_fixed_amout_item_row_title_status">13.0dp</dimen>
+
+    <dimen name="my_fixed_amout_item_content_value">15.0dp</dimen>
+
+    <dimen name="register_label_width">80dp</dimen>
+
+    <dimen name="financial_list_lint">14sp</dimen>
+
+    <dimen name="pending_order_detail_leftright_gap">10dp</dimen>
+    <dimen name="pending_order_detail_left_offset">15dp</dimen>
+
+    <dimen name="pending_order_detail_repay_offset">8dp</dimen>
+    <dimen name="pending_order_detail_delete_repay_offset">7dp</dimen>
+    <!-- 15 = 8 +7 pending_order_detail_left_offset=pending_order_detail_repay_offset+pending_order_detail_delete_repay_offset -->
+    <dimen name="order_detail_after_divid_left_offset">10dp</dimen>
+    <dimen name="order_detail_after_divid_extra_info_left_offset">40dp</dimen>
+
+    <dimen name="pending_order_detail_extend_fontsize">12sp</dimen>
+    <dimen name="pending_order_detail_amount_fontsize">15sp</dimen>
+</resources>

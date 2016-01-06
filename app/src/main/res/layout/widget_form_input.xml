@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+	android:paddingLeft="@dimen/dp_16"
+	android:background="@drawable/white_with_border_selector">
+
+	<TextView
+		android:id="@+id/tv_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/title_color"
+		android:textSize="@dimen/dp_17"
+		android:singleLine="true"
+		android:layout_centerVertical="true"/>
+
+	<ImageView
+		android:id="@+id/iv_arrow"
+		android:layout_width="32dp"
+		android:layout_height="32dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:src="@mipmap/home_arrow"
+		android:visibility="gone"/>
+
+	<EditText
+		android:id="@+id/et_value"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingRight="@dimen/dp_16"
+		android:layout_toRightOf="@id/tv_name"
+		android:layout_toLeftOf="@id/iv_arrow"
+		android:layout_marginLeft="@dimen/dp_19"
+		android:textColor="@color/title_color"
+		android:textColorHint="@color/hint_color"
+		android:textSize="@dimen/dp_17"
+		android:singleLine="true"
+		android:gravity="right"
+		android:layout_centerVertical="true"
+		android:background="@color/transparent"/>
+
+</RelativeLayout>

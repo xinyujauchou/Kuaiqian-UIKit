@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 统一控件库颜色 Start  -->
+    <color name="title_color">#181818</color>
+    <color name="guide_color">#666666</color>
+    <color name="tip_color">#959595</color>
+    <color name="hint_color">#cecece</color>
+    <color name="link_color">#51cad8</color>
+    <color name="important_color">#f54d4f</color>
+    <color name="divider_color">#dedede</color>
+    <color name="bg_color">#f2f2f2</color>
+    <color name="bg_mock">#fafafa</color>
+    <color name="titleBar_color">#f8f8f8</color>
+
+    <color name="list_name_color">#464646</color>
+    <color name="list_date_color">#aaaaaa</color>
+
+    <!-- 统一控件库颜色 End  -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_press_color">#f0f0f0</color>
+    <color name="login_disable">#4cffffff</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>
