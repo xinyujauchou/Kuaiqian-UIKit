@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import uikitcom.chaowang.uikit.widget.DockButtonLayout;
+
 public class KindsOfButtonActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
@@ -20,6 +22,8 @@ public class KindsOfButtonActivity extends AppCompatActivity implements View.OnC
         findViewById(R.id.btn4).setOnClickListener(this);
         findViewById(R.id.btn5).setOnClickListener(this);
         findViewById(R.id.btn6).setOnClickListener(this);
+        findViewById(R.id.btn6).setOnClickListener(this);
+        ((DockButtonLayout)findViewById(R.id.btn6)).setEnabled(false);
     }
 
     @Override

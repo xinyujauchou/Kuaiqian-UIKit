@@ -58,10 +58,10 @@ public class DockButtonLayout extends FrameLayout {
     }
 
     private void initPadding(){
-        mPaddingLeft = getResources().getDimensionPixelSize(R.dimen.dp_16);
+        mPaddingLeft = getResources().getDimensionPixelSize(R.dimen.dp_10);
         mPaddingRight = mPaddingLeft;
-        mPaddingTop = getResources().getDimensionPixelSize(R.dimen.dp_16);
-        mPaddingBottom = getResources().getDimensionPixelSize(R.dimen.dp_4);
+        mPaddingTop = getResources().getDimensionPixelSize(R.dimen.dp_10);
+        mPaddingBottom = getResources().getDimensionPixelSize(R.dimen.dp_10);
     }
 
     private void initPaint(){
