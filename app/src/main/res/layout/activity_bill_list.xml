@@ -4,15 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="uikitcom.chaowang.uikit.BillListActivity"
-    android:paddingTop="@dimen/dp_15"
-    android:paddingBottom="@dimen/dp_15"
-    android:paddingLeft="@dimen/dp_6"
-    android:paddingRight="@dimen/dp_6">
+    android:paddingBottom="@dimen/dp_15">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/base_toolbar" />
 
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginRight="@dimen/dp_6"
         android:scrollbars="none"
         android:cacheColorHint="@color/transparent"
         android:dividerHeight="3dp"

@@ -20,6 +20,7 @@ public class TradeInfoActivity extends AppCompatActivity {
     }
 
     private void initView(){
+        findViewById(R.id.back).setVisibility(View.VISIBLE);
         mTradeInfoHead = (TradeInfoHead)findViewById(R.id.trandeInfoHead);
         mTradeInfoContainer = (TradeInfoContainer)findViewById(R.id.trandeInfoContainer);
     }

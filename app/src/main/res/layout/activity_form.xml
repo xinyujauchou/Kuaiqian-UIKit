@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="uikitcom.chaowang.uikit.FormActivity"
     android:background="@color/bg_color"
     android:orientation="vertical">
 
+    <include layout="@layout/base_toolbar" />
+
     <uikitcom.chaowang.uikit.widget.LabelEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
         custom:label="字段名"
         android:text="已填写的信息"/>
 

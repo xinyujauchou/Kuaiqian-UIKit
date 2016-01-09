@@ -16,6 +16,7 @@ public class BillListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bill_list);
+        findViewById(R.id.back).setVisibility(View.VISIBLE);
         mListView = (ListView)findViewById(R.id.listview);
         mListView.setAdapter(new BillAdapter());
     }

@@ -5,10 +5,15 @@
     android:layout_height="match_parent"
     tools:context="uikitcom.chaowang.uikit.TradeInfoActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/base_toolbar" />
+
     <uikitcom.chaowang.uikit.widget.TradeInfoHead
         android:id="@+id/trandeInfoHead"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"/>
 
     <uikitcom.chaowang.uikit.widget.TradeInfoContainer
         android:id="@+id/trandeInfoContainer"

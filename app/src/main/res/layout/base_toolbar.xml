@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/back_height"
+    android:background="#f8f8f8">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="37dp"
+        android:layout_height="@dimen/back_height"
+        android:background="@mipmap/ic_back_press"
+       android:layout_gravity="center|left"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/title_id" 
+        android:textSize="@dimen/text_size_title"
+        android:textColor="@color/title_color"
+        android:text="标题"/>
+
+    <TextView
+        android:id="@+id/toolbar_right_text"
+        android:layout_gravity="center|right"
+        android:gravity="center_vertical|right"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dip"
+        android:visibility="gone" />
+
+    <ProgressBar android:id="@+id/progress_small_title"
+        style="?android:attr/progressBarStyleSmallTitle"
+        android:layout_gravity="center|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dip"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/toolbar_right_image"
+        android:layout_marginRight="20dip"
+        android:visibility="gone"
+        android:layout_gravity="center|right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/back_height" />
+
+
+</RelativeLayout>

@@ -12,6 +12,7 @@ public class KindsOfButtonActivity extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kinds_of_button);
+        findViewById(R.id.back).setVisibility(View.VISIBLE);
         initListener();
     }
 
@@ -23,7 +24,7 @@ public class KindsOfButtonActivity extends AppCompatActivity implements View.OnC
         findViewById(R.id.btn5).setOnClickListener(this);
         findViewById(R.id.btn6).setOnClickListener(this);
         findViewById(R.id.btn6).setOnClickListener(this);
-        ((DockButtonLayout)findViewById(R.id.btn6)).setEnabled(false);
+        ((DockButtonLayout)findViewById(R.id.btn6)).setEnabled(true);
     }
 
     @Override
