@@ -63,7 +63,7 @@ public class FormInputView  extends RelativeLayout {
         et_value.setHint(mHint);
         et_value.setText(mContent);
         if(mMode == Mode.SELECT){  //此模式下改变EditText字体大小
-            et_value.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimensionPixelSize(R.dimen.dp_15));
+            et_value.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimensionPixelSize(R.dimen.dp_16));
             et_value.setEnabled(false);
             et_value.setPadding(getPaddingLeft(), getPaddingTop(), 0, getPaddingBottom());
             findViewById(R.id.iv_arrow).setVisibility(View.VISIBLE); //箭头设置为可见

@@ -11,6 +11,12 @@
 
     <include layout="@layout/base_toolbar" />
 
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color"/>
+
     <uikitcom.chaowang.uikit.widget.LabelEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,6 +30,14 @@
         android:layout_marginTop="-1px"
         custom:label="字段名"
         android:hint="提示信息"/>
+
+    <uikitcom.chaowang.uikit.widget.LabelEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1px"
+        android:enabled="false"
+        custom:label="字段名"
+        android:hint="不可更改信息"/>
 
     <uikitcom.chaowang.uikit.widget.FormInputView
         android:layout_width="match_parent"
@@ -54,6 +68,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_15"
         android:layout_marginRight="@dimen/dp_15"
-        android:layout_marginTop="@dimen/dp_55"/>
+        android:layout_marginTop="@dimen/dp_16"/>
 
 </LinearLayout>

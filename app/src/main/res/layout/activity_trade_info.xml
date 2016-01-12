@@ -9,25 +9,47 @@
         android:id="@+id/toolbar"
         layout="@layout/base_toolbar" />
 
-    <uikitcom.chaowang.uikit.widget.TradeInfoHead
-        android:id="@+id/trandeInfoHead"
+    <View
+        android:id="@+id/topLine"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"/>
+        android:layout_height="1px"
+        android:layout_below="@id/toolbar"
+        android:background="@color/divider_color"/>
 
-    <uikitcom.chaowang.uikit.widget.TradeInfoContainer
-        android:id="@+id/trandeInfoContainer"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/trandeInfoHead"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/topLine">
 
-    <uikitcom.chaowang.uikit.widget.ImportantButton
-        android:id="@+id/tv_commit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dp_16"
-        android:layout_marginRight="@dimen/dp_16"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/dp_10"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <uikitcom.chaowang.uikit.widget.TradeInfoHead
+                android:id="@+id/trandeInfoHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <uikitcom.chaowang.uikit.widget.TradeInfoContainer
+                android:id="@+id/trandeInfoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trandeInfoHead"/>
+
+            <uikitcom.chaowang.uikit.widget.ImportantButton
+                android:id="@+id/tv_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trandeInfoContainer"
+                android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginBottom="@dimen/dp_10"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
 
 </RelativeLayout>

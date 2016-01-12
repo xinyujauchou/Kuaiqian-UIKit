@@ -10,17 +10,19 @@
         android:id="@+id/toolbar"
         layout="@layout/base_toolbar" />
 
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/toolbar"
+        android:background="@color/divider_color"/>
+
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
-        android:layout_marginTop="@dimen/dp_16"
-        android:layout_marginLeft="@dimen/dp_6"
-        android:layout_marginRight="@dimen/dp_6"
+        android:layout_below="@id/topLine"
         android:scrollbars="none"
-        android:cacheColorHint="@color/transparent"
-        android:dividerHeight="3dp"
         android:divider="@color/transparent"/>
 
 </RelativeLayout>
