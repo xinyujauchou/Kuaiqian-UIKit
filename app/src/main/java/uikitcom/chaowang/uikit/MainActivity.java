@@ -1,11 +1,15 @@
 package uikitcom.chaowang.uikit;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -23,8 +27,33 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
+
         setContentView(R.layout.activity_main);
+//        getWindow().setStatusBarColor(Color.parseColor("#f94d4a"));
+//                setTranslucentStatus();
         initView();
+    }
+
+    private void setTranslucentStatus() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            Window window = getWindow();
+//            WindowManager.LayoutParams winParams = window.getAttributes();
+//            final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+//            winParams.flags |= bits;
+//            window.setAttributes(winParams);
+
+            window.setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//
+        }
+//        SystemStatusManager tintManager = new SystemStatusManager(this);
+//        tintManager.setStatusBarTintEnabled(true);
+//        tintManager.setStatusBarTintResource(0);//状态栏无背景
+
+
     }
 
     private void initView(){
@@ -32,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         kinds.add("表单/组合表单");
         kinds.add("账单列表");
         kinds.add("各种按钮");
+        kinds.add("验证码控件");
 
         mListView = (ListView)findViewById(R.id.listview);
         mListView.setAdapter(new MyAdapter());
@@ -54,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(new Intent(this, KindsOfButtonActivity.class));
                 break;
             case 4:
-
+                startActivity(new Intent(this, ValidateCodeActivity.class));
                 break;
             case 5:
 
@@ -88,10 +118,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         public View getView(int position, View convertView, ViewGroup parent) {
             TextView content = new TextView(MainActivity.this);
             content.setLayoutParams(new AbsListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT,
-                                    AbsListView.LayoutParams.WRAP_CONTENT));
+                    AbsListView.LayoutParams.WRAP_CONTENT));
             content.setPadding(0, 20, 0, 20);
             content.setGravity(Gravity.CENTER);
-            content.setText(kinds.get(position));
+//            if(position >= kinds.size()){
+//                content.setText("后加的内容页");
+//            }else{
+                content.setText(kinds.get(position));
+//            }
             content.setTextSize(17);
             return content;
         }

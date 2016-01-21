@@ -36,11 +36,19 @@
     <!-- 表单输入自定义属性 -->
     <declare-styleable name="form_input_view">
         <attr name="named" format="reference|string" />
+        <attr name="nameColor" format="color|reference" />
         <attr name="content" format="reference|string" />
-        <attr name="hint" format="reference|string" />
-        <attr name="mode" format="enum">(
-            <enum name="input" value="0" />
+        <attr name="valueColor" format="color|reference" />
+        <attr name="valueSize" format="dimension|reference" />
+        <attr name="hasTopLine" format="boolean"/>
+        <attr name="topLinePaddingLeft" format="reference" />
+        <attr name="topLinePaddingRight" format="reference" />
+        <attr name="hasBottomLine" format="boolean"/>
+        <attr name="bottomLinePaddingLeft" format="reference" />
+        <attr name="bottomLinePaddingRight" format="reference" />
+        <attr name="mode" format="enum">
             <enum name="select" value="1" />
+            <enum name="display" value="2" />
         </attr>
     </declare-styleable>
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50">
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="@dimen/dp_135"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/red_selector"
+        android:gravity="center"
+        android:textSize="@dimen/dp_16"
+        android:text="@string/get_verification_code"
+        android:textColor="@color/white"
+        android:singleLine="true"/>
+
+    <uikitcom.chaowang.uikit.widget.LabelEditText
+        android:id="@+id/et_validate_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_send"
+        android:layout_marginRight="@dimen/dp_minus_1"
+        android:hint="@string/entry_verification_code"
+        android:gravity="left|center_vertical"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="8"
+        custom:label="验证码" />
+
+    <!--<TextView
+        android:layout_width="@dimen/register_label_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/register_verify_code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_17" />
+
+    <EditText
+        android:id="@+id/verify_code_input"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1px"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:hint="@string/entry_verification_code"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColorHint="@color/message_hint_color"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/key_text_size" />
+
+    <com.bill99.kuaiqian.widget.HideKeyboardButton
+        android:id="@+id/send_verify_code"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/red"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="@string/get_verification_code"
+        android:textColor="@color/white" />
+-->
+</RelativeLayout>

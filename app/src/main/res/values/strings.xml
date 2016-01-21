@@ -3,4 +3,7 @@
 
     <string name="complete">完成</string>
     <string name="cancel">取消</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="entry_verification_code">输入验证码</string>
+    <string name="register_verify_code_resend_btn">重新获取验证码</string>
 </resources>

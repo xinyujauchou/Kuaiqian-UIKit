@@ -2,7 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/back_height"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
     android:background="#f8f8f8">
 
     <Button
@@ -10,17 +11,17 @@
         android:layout_width="37dp"
         android:layout_height="@dimen/back_height"
         android:background="@mipmap/ic_back_press"
-       android:layout_gravity="center|left"
         />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:id="@+id/title_id" 
+        android:layout_height="@dimen/back_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/title_id"
         android:textSize="@dimen/text_size_title"
         android:textColor="@color/title_color"
-        android:text="标题"/>
+        android:text="标题" />
 
     <TextView
         android:id="@+id/toolbar_right_text"

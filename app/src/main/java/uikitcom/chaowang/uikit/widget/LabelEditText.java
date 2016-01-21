@@ -17,6 +17,7 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.EditText;
 
@@ -30,7 +31,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 	private static int LABEL_PADDING_LEFT_DEFAULT;
 	private static int DEFAULT_PADDING_RIGHT;
 	private final static int DEFAULT_TEXT_SIZE = 17;
-	private final static int LABEL_PADDING_RIGHT_DEFAULT = 100;
+	private static int LABEL_PADDING_RIGHT_DEFAULT = 48;
 	private final static int LABEL_COLOR_DEFAULT = Color.parseColor("#181818");
 	private float labelBaseLine = 0;
 	private String label = "字段名";
@@ -61,6 +62,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 			ta.recycle();
 		}
 		DEFAULT_PADDING_RIGHT = getResources().getDimensionPixelSize(R.dimen.dp_16);
+		LABEL_PADDING_RIGHT_DEFAULT = getResources().getDimensionPixelSize(R.dimen.dp_16);
 		LABEL_PADDING_LEFT_DEFAULT = getResources().getDimensionPixelSize(R.dimen.dp_16); //设置padding,为内容预留出绘制间距
 		labelPaint = new Paint();
 		labelPaint.setAntiAlias(true);
@@ -72,11 +74,13 @@ public class LabelEditText extends EditText implements TextWatcher {
 			label = "";
 		}
 		int paddindLeft = (int) (labelPaint.measureText(label));
-		setPadding(paddindLeft + LABEL_PADDING_LEFT_DEFAULT + LABEL_PADDING_RIGHT_DEFAULT, getPaddingTop(),
-				DEFAULT_PADDING_RIGHT, getPaddingBottom());
+		setPadding(paddindLeft + LABEL_PADDING_LEFT_DEFAULT + LABEL_PADDING_RIGHT_DEFAULT, 0,
+				DEFAULT_PADDING_RIGHT, 0);
 		setHintTextColor(getResources().getColor(R.color.hint_color));
 		setSingleLine();
-		setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+		if(getGravity() == 8388627){
+			setGravity(Gravity.CENTER_VERTICAL | Gravity.RIGHT);
+		}
 
 		addTextChangedListener(this);
 		setBackgroundResource(R.drawable.white_with_border);
@@ -105,7 +109,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 	public void setEnabled(boolean enabled) {
 		super.setEnabled(enabled);
 		setTextColor(enabled ? getResources().getColor(R.color.title_color)
-						     : getResources().getColor(R.color.tip_color));
+				: getResources().getColor(R.color.tip_color));
 	}
 
 	@Override

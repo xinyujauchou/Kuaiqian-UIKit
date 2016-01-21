@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/dp_50"
-	android:paddingLeft="@dimen/dp_16"
-	android:background="@drawable/white_with_border_selector">
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/dp_50"
+	android:paddingLeft="@dimen/dp_16">
 
 	<TextView
 		android:id="@+id/tv_name"
@@ -23,7 +22,7 @@
 		android:src="@mipmap/home_arrow"
 		android:visibility="gone"/>
 
-	<EditText
+	<TextView
 		android:id="@+id/et_value"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -32,8 +31,7 @@
 		android:layout_toLeftOf="@id/iv_arrow"
 		android:layout_marginLeft="@dimen/dp_19"
 		android:textColor="@color/title_color"
-		android:textColorHint="@color/hint_color"
-		android:textSize="@dimen/dp_17"
+		android:textSize="@dimen/dp_16"
 		android:singleLine="true"
 		android:gravity="right"
 		android:layout_centerVertical="true"

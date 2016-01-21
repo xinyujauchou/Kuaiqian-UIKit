@@ -18,7 +18,8 @@
         <activity android:name=".TradeInfoActivity" />
         <activity android:name=".FormActivity" />
         <activity android:name=".KindsOfButtonActivity" />
-        <activity android:name=".BillListActivity"></activity>
+        <activity android:name=".BillListActivity" />
+        <activity android:name=".ValidateCodeActivity"></activity>
     </application>
 
 </manifest>
