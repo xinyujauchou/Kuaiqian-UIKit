@@ -106,7 +106,7 @@ public class FormInputView  extends RelativeLayout{
 
     /** 初始化画笔 **/
     private void initPaint(){
-        if(hasBottomLine){ //需要绘制分割线
+        if(hasBottomLine || hasTopLine){ //需要绘制分割线
             mDividerPaint = new Paint();
             mDividerPaint.setAntiAlias(true);
             mDividerPaint.setStrokeWidth(1);
