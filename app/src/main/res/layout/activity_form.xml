@@ -37,7 +37,7 @@
         android:layout_marginTop="-1px"
         android:enabled="false"
         custom:label="字段名"
-        android:hint="不可更改信息"/>
+        android:text="是不可更改的信息"/>
 
     <!--<uikitcom.chaowang.uikit.widget.FormInputView-->
         <!--android:layout_width="match_parent"-->
@@ -63,37 +63,48 @@
         custom:label="字段名"
         android:hint="提示信息"/>
 
-    <uikitcom.chaowang.uikit.widget.FormInputView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_15"
-        custom:named="商家"
-        custom:mode="display"
-        custom:content="小辉哥(万达广场店)"
-        custom:hasTopLine="true"
-        custom:hasBottomLine="true"
-        custom:valueColor="#f54d4f"
-        android:background="@color/transparent"/>
+    <!--<uikitcom.chaowang.uikit.widget.FormInputView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/dp_15"-->
+        <!--custom:named="商家"-->
+        <!--custom:mode="display"-->
+        <!--custom:content="小辉哥(万达广场店)"-->
+        <!--custom:hasTopLine="true"-->
+        <!--custom:hasBottomLine="true"-->
+        <!--custom:valueColor="#f54d4f"-->
+        <!--android:background="@color/transparent"/>-->
 
-    <uikitcom.chaowang.uikit.widget.FormInputView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        custom:named="备注"
-        custom:mode="display"
-        custom:content="小辉哥赊账"
-        custom:hasBottomLine="true"
-        custom:valueColor="@color/abc_search_url_text"
-        android:background="@color/transparent"/>
+    <!--<uikitcom.chaowang.uikit.widget.FormInputView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--custom:named="备注"-->
+        <!--custom:mode="display"-->
+        <!--custom:content="小辉哥赊账"-->
+        <!--custom:hasBottomLine="true"-->
+        <!--custom:valueColor="@color/abc_search_url_text"-->
+        <!--android:background="@color/transparent"/>-->
 
-    <uikitcom.chaowang.uikit.widget.FormInputView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        custom:named="支付方式"
-        custom:mode="display"
-        custom:content="信用卡支付"
-        custom:hasBottomLine="true"
-        custom:valueSize="30dp"
-        android:background="@color/transparent"/>
+    <!--<uikitcom.chaowang.uikit.widget.FormInputView-->
+        <!--android:id="@+id/fi_selectType"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--custom:named="备注"-->
+        <!--custom:mode="select"-->
+        <!--custom:content="快易花"-->
+        <!--custom:hasBottomLine="true"-->
+        <!--custom:nameColor="@color/tip_color"-->
+        <!--android:background="@color/transparent"/>-->
+
+    <!--<uikitcom.chaowang.uikit.widget.FormInputView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--custom:named="支付方式"-->
+        <!--custom:mode="display"-->
+        <!--custom:content="信用卡支付"-->
+        <!--custom:hasBottomLine="true"-->
+        <!--custom:valueSize="30dp"-->
+        <!--android:background="@color/transparent"/>-->
 
     <uikitcom.chaowang.uikit.widget.ImportantButton
         android:layout_width="match_parent"

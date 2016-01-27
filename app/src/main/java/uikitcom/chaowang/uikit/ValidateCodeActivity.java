@@ -1,8 +1,13 @@
 package uikitcom.chaowang.uikit;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import uikitcom.chaowang.uikit.widget.ValidateCodeView;
@@ -32,6 +37,20 @@ public class ValidateCodeActivity extends AppCompatActivity implements ValidateC
 
             }
         });
+
+//        mValidateCodeView.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                TextView tv = new TextView(ValidateCodeActivity.this);
+//                tv.setText("我是TextView");
+//                tv.setGravity(Gravity.CENTER);
+//                tv.setBackgroundColor(Color.GREEN);
+//                tv.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+//                        100));
+//                ((ViewGroup) findViewById(R.id.container)).addView(tv);
+//            }
+//        }, 2000);
+
     }
 
     @Override

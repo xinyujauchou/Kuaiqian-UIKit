@@ -84,6 +84,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 
 		addTextChangedListener(this);
 		setBackgroundResource(R.drawable.white_with_border);
+		setEnabled(isEnabled());
 	}
 
 	@Override

@@ -53,7 +53,11 @@ public class BillListActivity extends AppCompatActivity {
                 boolean isDone = position/2 == 0;
                 String status = isDone ? "交易成功" : "未完成";
                 ListItemLayout listItemLayout = new ListItemLayout(BillListActivity.this);
-                listItemLayout.setName("快钱包-转出到银行卡");
+                if(position == 1){
+                    listItemLayout.setName("快钱包-转出到中国人名银行招商银行农业银行卡");
+                }else{
+                    listItemLayout.setName("快钱包-转出到银行卡");
+                }
                 listItemLayout.setTime("07:06");
                 listItemLayout.setAmt("9000", true);
                 listItemLayout.setStatus(status, isDone);

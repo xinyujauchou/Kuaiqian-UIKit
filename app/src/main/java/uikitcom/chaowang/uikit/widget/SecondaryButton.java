@@ -36,11 +36,11 @@ public class SecondaryButton extends TextView {
      */
     private void init(Context context, AttributeSet attrs){
         this.mContext = context;
-        SYSTEM_TEXT_SIZE = getResources().getDimensionPixelSize(R.dimen.dp_14);
-        int DEFAULT_TEXTSIZE = getResources().getDimensionPixelSize(R.dimen.dp_20); //设置默认字体大小的值
-        if(getPaint().getTextSize() <= SYSTEM_TEXT_SIZE){  //默认字体大小，一定程度上说明用户没有设置字体大小,这时候启用自己的默认字体大小
+        SYSTEM_TEXT_SIZE = getResources().getDimensionPixelSize(R.dimen.dp_15);
+        int DEFAULT_TEXTSIZE = getResources().getDimensionPixelSize(R.dimen.dp_17); //设置默认字体大小的值
+//        if(getPaint().getTextSize() <= SYSTEM_TEXT_SIZE){  //默认字体大小，一定程度上说明用户没有设置字体大小,这时候启用自己的默认字体大小
             setRawTextSize(DEFAULT_TEXTSIZE); //重新设置字体大小
-        }
+//        }
 
         setGravity(Gravity.CENTER); //设置内容居中
         if(getBackground() == null){

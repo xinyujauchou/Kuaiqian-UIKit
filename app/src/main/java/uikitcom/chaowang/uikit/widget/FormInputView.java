@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -24,6 +25,9 @@ public class FormInputView  extends RelativeLayout{
     private static int BOTTOM_LINE_PADDING_RIGHT = 0;    //下分割线右padding
     private static int TOP_LINE_PADDING_lEFT;            //上分割线左padding
     private static int TOP_LINE_PADDING_RIGHT = 0;       //上分割线右padding
+
+    public final static int ARROW_ID = R.id.iv_arrow;    //箭头的ID
+    public final static int VALUE_ID = R.id.et_value;    //值的ID
     private TextView tvName;  //名称
     public TextView tvValue; //值
     private ImageView ivArrow;//箭头
@@ -92,12 +96,14 @@ public class FormInputView  extends RelativeLayout{
             findViewById(R.id.iv_arrow).setVisibility(View.VISIBLE); //箭头设置为可见
         }else if(mMode == Mode.DISPLAY){
             tvName.setTextColor(getResources().getColor(R.color.tip_color));
+            LayoutParams lp = (RelativeLayout.LayoutParams)tvValue.getLayoutParams();
+            lp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, RelativeLayout.TRUE);
         }
         if(mValueColor != DEFAULT_VALUE_COLOR){
             tvValue.setTextColor(mValueColor);
         }
         if(mNameColor != DEFAULT_VALUE_COLOR){
-            tvName.setTextColor(mValueColor);
+            tvName.setTextColor(mNameColor);
         }
         if(mValueSize != VALUE_NONE){
             tvValue.getPaint().setTextSize(mValueSize);
@@ -187,6 +193,12 @@ public class FormInputView  extends RelativeLayout{
      */
     public String getValue(){
         return tvValue.getText().toString().trim();
+    }
+
+    @Override
+    public void setOnClickListener(OnClickListener l) {
+        ivArrow.setOnClickListener(l);
+        tvValue.setOnClickListener(l);
     }
 
     /** 表单模式 **/

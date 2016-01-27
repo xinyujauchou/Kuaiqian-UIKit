@@ -24,17 +24,17 @@
 
 	<TextView
 		android:id="@+id/et_value"
-		android:layout_width="match_parent"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:paddingRight="@dimen/dp_16"
-		android:layout_toRightOf="@id/tv_name"
 		android:layout_toLeftOf="@id/iv_arrow"
-		android:layout_marginLeft="@dimen/dp_19"
 		android:textColor="@color/title_color"
 		android:textSize="@dimen/dp_16"
 		android:singleLine="true"
 		android:gravity="right"
 		android:layout_centerVertical="true"
+		android:maxWidth="230dp"
+		android:ellipsize="end"
 		android:background="@color/transparent"/>
 
 </RelativeLayout>
