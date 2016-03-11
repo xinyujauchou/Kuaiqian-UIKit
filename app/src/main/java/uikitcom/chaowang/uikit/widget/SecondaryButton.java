@@ -56,7 +56,9 @@ public class SecondaryButton extends TextView {
     public void setEnabled(boolean enabled) {
         super.setEnabled(enabled);
         setTextColor(enabled ? getResources().getColor(R.color.important_color)
-                : getResources().getColor(R.color.important_color));
+                : getResources().getColor(R.color.white));
+        setBackgroundResource(enabled ? R.drawable.red_stroke_corners_selector
+                                      : R.drawable.grey_round_corners_4px_press);
     }
 
     @Override
