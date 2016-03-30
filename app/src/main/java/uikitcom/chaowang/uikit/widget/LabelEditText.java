@@ -14,6 +14,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.FontMetrics;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -52,8 +53,8 @@ public class LabelEditText extends EditText implements TextWatcher {
 		super(context, attrs, defStyle);
 		init(context, attrs);
 	}
-	
-	
+
+
 	private void init(Context context, AttributeSet attrs){
 		if(attrs != null){
 			TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.labelEdittext);
@@ -69,7 +70,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 		setTextSize(DEFAULT_TEXT_SIZE); //重新设置输入框字体大小
 		labelPaint.setTextSize(getPaint().getTextSize()); //重新设置lable字体大小
 		labelPaint.setColor(labelColor);
-		
+
 		if(TextUtils.isEmpty(label)){
 			label = "";
 		}
@@ -77,7 +78,9 @@ public class LabelEditText extends EditText implements TextWatcher {
 		setPadding(paddindLeft + LABEL_PADDING_LEFT_DEFAULT + LABEL_PADDING_RIGHT_DEFAULT, 0,
 				DEFAULT_PADDING_RIGHT, 0);
 		setHintTextColor(getResources().getColor(R.color.hint_color));
+		int inputType = getInputType();
 		setSingleLine();
+		setInputType(inputType);  //setSingleLine 的  bug
 		if(getGravity() == 8388627){
 			setGravity(Gravity.CENTER_VERTICAL | Gravity.RIGHT);
 		}

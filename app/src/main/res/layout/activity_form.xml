@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-1px"
         custom:label="字段名"
-        android:hint="提示信息"/>
+        android:hint="提示信息"
+        android:inputType="textPassword"/>
 
     <uikitcom.chaowang.uikit.widget.LabelEditText
         android:layout_width="match_parent"

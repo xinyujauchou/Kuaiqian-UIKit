@@ -34,7 +34,7 @@ public class TradeInfoActivity extends AppCompatActivity {
         /** 设置订单信息 **/
         mTradeInfoContainer.addInfo("商户名称", "家乐福")
                            .addInfo("商品名", "德芙巧克力")
-                           .addInfo("订单号", "19283102381902381092312")
+                           .addInfo("订单号", "1928310238191202381092312")
                            .addInfo("交易方式", "快易花")
                            .addInfo("交易金额", "8.66")
                            .addInfo("交易状态", "成功")
