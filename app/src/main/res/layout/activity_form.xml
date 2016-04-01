@@ -64,6 +64,38 @@
         custom:label="字段名"
         android:hint="提示信息"/>
 
+    <uikitcom.chaowang.uikit.widget.LabelEditText
+        android:id="@+id/icon_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        custom:label="手机号"
+        android:hint="银行预留手机号"
+        custom:endIcon="@mipmap/baokuan"
+        custom:endIconHeight="@dimen/dp_30"
+        android:gravity="left|center_vertical"
+        custom:showClear="true"
+        android:singleLine="true"/>
+    <uikitcom.chaowang.uikit.widget.LabelEditText
+        android:id="@+id/icon_forms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        custom:label="银行卡"
+        android:hint="输入您的银行卡号"
+        custom:endIcon="@mipmap/ic_card_info"
+        custom:endIconHeight="@dimen/dp_17"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"/>
+
+    <uikitcom.chaowang.uikit.widget.LabelEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        custom:label="投资金额(元)"
+        custom:labelSize="@dimen/dp_15"
+        android:hint="投资金额是100的整数倍"/>
+
     <!--<uikitcom.chaowang.uikit.widget.FormInputView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content"-->

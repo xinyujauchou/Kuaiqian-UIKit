@@ -6,6 +6,12 @@
     <declare-styleable name="labelEdittext">
         <attr name="label" format="reference|string"/>
         <attr name="labelColor" format="reference|string"/>
+        <attr name="labelSize" format="reference|dimension"/>
+        <attr name="endIcon" format="reference"/>
+        <attr name="endIconHeight" format="dimension|reference"/>
+        <attr name="showClear" format="boolean"/>
+        <attr name="labelPaddingLeft" format="reference|dimension"/>
+        <attr name="labelPaddingRight" format="reference|dimension"/>
     </declare-styleable>
 
     <declare-styleable name="horibalTextView">

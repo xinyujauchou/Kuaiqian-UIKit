@@ -150,6 +150,14 @@ public class ValidateCodeView extends RelativeLayout implements View.OnClickList
     }
 
     /**
+     * 手动设置内容
+     * @param charSequence 验证码或其他内容
+     */
+    public void setText(CharSequence charSequence){
+        mEditText.setText(charSequence);
+    }
+
+    /**
      * 用户当前输入的验证码是否合法
      * @return 用户输入得到验证码的合法性
      */
