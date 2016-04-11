@@ -29,7 +29,7 @@ public class ValidateCodeView extends RelativeLayout implements View.OnClickList
     private MCountDownTimer mTimer;
     private int mMillisInfuture = VALUE_NOME;
     private int mCountdownInterval = VALUE_NOME;
-    private boolean mIsLegal = false; //用户填写的验证码是否合法
+    private boolean mIsLegal = false; //用户填写的验证码是否合法(
 
     public ValidateCodeView(Context context) {
         super(context);
@@ -163,5 +163,12 @@ public class ValidateCodeView extends RelativeLayout implements View.OnClickList
      */
     public boolean isCodeLegal(){
         return mIsLegal;
+    }
+
+    public void setInputBackGroundResource(int backGroundId){
+        if(backGroundId <= 0){
+            throw new IllegalArgumentException("backGroundId is invalidate");
+        }
+        mEditText.setBackgroundResource(backGroundId);
     }
 }

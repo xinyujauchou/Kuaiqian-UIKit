@@ -37,6 +37,7 @@ public class ValidateCodeActivity extends AppCompatActivity implements ValidateC
 
             }
         });
+        mValidateCodeView.setInputBackGroundResource(R.drawable.red_corners_nomal);
 
 //        mValidateCodeView.postDelayed(new Runnable() {
 //            @Override

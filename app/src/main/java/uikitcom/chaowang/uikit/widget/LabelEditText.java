@@ -154,6 +154,9 @@ public class LabelEditText extends EditText implements TextWatcher {
 		canvas.drawText(label, mLabelPaddingLeft + getScrollX(), labelBaseLine, labelPaint);
 		drawDrawableEnd(canvas); //绘制右侧小图标
 		drawClearBitmap(canvas);
+		if(getPaddingRight() == mPaddingRight + 10){ //修复魅族MX4 bug
+			return;
+		}
 		setPadding(getPaddingLeft(), getPaddingTop(), mPaddingRight + 10, getPaddingBottom());
 	}
 
