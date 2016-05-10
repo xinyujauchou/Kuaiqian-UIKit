@@ -76,7 +76,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 	}
 
 
-	private void init(Context context, AttributeSet attrs){
+	private void init(Context context, AttributeSet attrs){  
 		DEFAULT_PADDING_RIGHT = getResources().getDimensionPixelSize(R.dimen.dp_16);
 		LABEL_PADDING_RIGHT_DEFAULT = getResources().getDimensionPixelSize(R.dimen.dp_16);
 		LABEL_PADDING_LEFT_DEFAULT = getResources().getDimensionPixelSize(R.dimen.dp_16); //设置padding,为内容预留出绘制间距
@@ -115,6 +115,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 		addTextChangedListener(this);
 		setBackgroundResource(R.drawable.white_with_border);
 		setEnabled(isEnabled());
+		
 	}
 
 	@Override
