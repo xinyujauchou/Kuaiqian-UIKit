@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_56"
+              android:background="@drawable/list_item_selector"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/dp_16"
+              android:paddingRight="@dimen/dp_16">
+
+    <ImageView
+        android:id="@+id/bottom_dialog_list_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_12"
+        android:contentDescription="Item icon"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/bottom_dialog_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:id="@+id/bottom_dialog_list_item_point"
+        style="@style/TipPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Tips dot"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <ViewStub
+        android:id="@+id/bottom_dialog_list_item_mark_view_stub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/widget_sheet_list_item_mark"/>
+</LinearLayout>

@@ -29,4 +29,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="btn_disable_bg">#c0c0c0</color>
+    <color name="color_red">#FA3A3A</color>
+    <color name="color_gray_">#49505A</color>
+    <color name="color_gray_item_text">#5D646E</color>
 </resources>

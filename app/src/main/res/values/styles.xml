@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BottomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item><!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 提示更新小圆点 -->
+    <style name="TipPoint">
+        <item name="android:layout_width">@dimen/dp_8</item>
+        <item name="android:layout_height">@dimen/dp_8</item>
+        <item name="android:background">@drawable/red_tips_point</item>
+    </style>
+
 </resources>

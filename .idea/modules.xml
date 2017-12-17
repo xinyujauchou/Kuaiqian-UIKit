@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kuaiqian-UIKit.iml" filepath="$PROJECT_DIR$/Kuaiqian-UIKit.iml" />
       <module fileurl="file://$PROJECT_DIR$/UIKit.iml" filepath="$PROJECT_DIR$/UIKit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

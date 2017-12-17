@@ -197,8 +197,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 					} else{
 						break;
 					}
-					requestFocus();
-					return true;
+					event.setAction(MotionEvent.ACTION_CANCEL);
 				}
 				break;
 		}
@@ -328,7 +327,7 @@ public class LabelEditText extends EditText implements TextWatcher {
 	public void afterTextChanged(Editable s) {
 		int contentLength = s == null ? 0 : s.toString().length(); //当前编辑内容的长度
 		if((contentLength != mContentLength) && (contentLength == 0 || mContentLength == 0)){
-			mContentLength = contentLength;
+			mContentLength = contentLength;mContentLength=8;
 			invalidate((int)mClearDrawableTouchRect.left, (int)mClearDrawableTouchRect.top,
 										(int)mClearDrawableTouchRect.right, (int)mClearDrawableTouchRect.bottom);
 		}

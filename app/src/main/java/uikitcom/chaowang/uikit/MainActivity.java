@@ -16,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         kinds.add("账单列表");
         kinds.add("各种按钮");
         kinds.add("验证码控件");
+        kinds.add("底部弹出菜单");
 
         mListView = (ListView)findViewById(R.id.listview);
         mListView.setAdapter(new MyAdapter());
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position){
             case 0:
+                Toast.makeText(this, this.getPackageName(), Toast.LENGTH_LONG).show();
                 startActivity(new Intent(this, TradeInfoActivity.class));
                 break;
             case 1:
@@ -87,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(new Intent(this, ValidateCodeActivity.class));
                 break;
             case 5:
-
+                startActivity(new Intent(this, DialogMenuActivity.class));
                 break;
             default:
                 break;

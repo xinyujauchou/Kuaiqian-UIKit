@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "uikitcom.chaowang.uikit"
@@ -15,6 +15,41 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debugsuffix {
+            applicationIdSuffix ".test2"
+            debuggable false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    flavorDimensions "mode"
+
+    productFlavors {
+        dev2 {
+            dimension "mode"
+            versionNameSuffix "-dev"
+            applicationIdSuffix '.dev'
+            resConfigs "en", "xxhdpi"
+            ext.enableCrashlytics = false
+            ext.alwaysUpdateBuildId = false
+//            crunchPngs false
+        }
+
+        lala {
+            dimension "mode"
+            versionNameSuffix "-dev"
+            applicationIdSuffix '.dev'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../debug.keystore")
+            storePassword "99bill"
+            keyAlias "debugkey"
+            keyPassword "99bill"
         }
     }
 }
