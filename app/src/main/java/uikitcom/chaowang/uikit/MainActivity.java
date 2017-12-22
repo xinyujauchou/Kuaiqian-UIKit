@@ -2,7 +2,9 @@ package uikitcom.chaowang.uikit;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -36,6 +38,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 //        getWindow().setStatusBarColor(Color.parseColor("#f94d4a"));
 //                setTranslucentStatus();
         initView();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (!Settings.canDrawOverlays(this)) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                        Uri.parse("package:" + getPackageName()));
+                startActivityForResult(intent, 10000);
+            }
+        }
     }
 
     private void setTranslucentStatus() {
@@ -54,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 //        tintManager.setStatusBarTintEnabled(true);
 //        tintManager.setStatusBarTintResource(0);//状态栏无背景
 
-
     }
 
     private void initView(){
@@ -64,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         kinds.add("各种按钮");
         kinds.add("验证码控件");
         kinds.add("底部弹出菜单");
+        kinds.add("react native");
 
         mListView = (ListView)findViewById(R.id.listview);
         mListView.setAdapter(new MyAdapter());
@@ -91,6 +100,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 5:
                 startActivity(new Intent(this, DialogMenuActivity.class));
+                break;
+            case 6:
+                startActivity(new Intent(this, MyReactActivity.class));
                 break;
             default:
                 break;

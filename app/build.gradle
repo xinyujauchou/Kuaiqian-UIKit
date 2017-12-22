@@ -1,15 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 23
     buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "uikitcom.chaowang.uikit"
-        minSdkVersion 15
-        targetSdkVersion 22
+        minSdkVersion 16
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
     }
     buildTypes {
         release {
@@ -17,32 +21,32 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
-        debugsuffix {
-            applicationIdSuffix ".test2"
-            debuggable false
-            signingConfig signingConfigs.debug
-        }
+//        debugsuffix {
+//            applicationIdSuffix ".test2"
+//            debuggable true
+//            signingConfig signingConfigs.debug
+//        }
     }
 
     flavorDimensions "mode"
 
-    productFlavors {
-        dev2 {
-            dimension "mode"
-            versionNameSuffix "-dev"
-            applicationIdSuffix '.dev'
-            resConfigs "en", "xxhdpi"
-            ext.enableCrashlytics = false
-            ext.alwaysUpdateBuildId = false
-//            crunchPngs false
-        }
-
-        lala {
-            dimension "mode"
-            versionNameSuffix "-dev"
-            applicationIdSuffix '.dev'
-        }
-    }
+//    productFlavors {
+//        dev2 {
+//            dimension "mode"
+//            versionNameSuffix "-dev"
+//            applicationIdSuffix '.dev'
+//            resConfigs "en", "xxhdpi"
+//            ext.enableCrashlytics = false
+//            ext.alwaysUpdateBuildId = false
+////            crunchPngs false
+//        }
+//
+//        lala {
+//            dimension "mode"
+//            versionNameSuffix "-dev"
+//            applicationIdSuffix '.dev'
+//        }
+//    }
 
     signingConfigs {
         debug {
@@ -56,5 +60,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile "com.facebook.react:react-native:0.51.0" // From node_modules.
 }
