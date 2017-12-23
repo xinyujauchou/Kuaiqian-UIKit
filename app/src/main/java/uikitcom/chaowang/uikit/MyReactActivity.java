@@ -6,10 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 
 import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.ReactPackage;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import uikitcom.chaowang.uikit.react.KQReactPackage;
+import uikitcom.chaowang.uikit.react.emitter.MessageEmitter;
 
 /**
  * RN视图
@@ -20,6 +27,7 @@ public class MyReactActivity extends AppCompatActivity implements DefaultHardwar
 
     private ReactRootView mReactRootView;
     private ReactInstanceManager mReactInstanceManager;
+    private List<ReactPackage> mPackageList;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,12 +39,21 @@ public class MyReactActivity extends AppCompatActivity implements DefaultHardwar
 //                .setJSMainModuleName("index.android")
                 .setJSMainModulePath("index")
                 .addPackage(new MainReactPackage())
+                .addPackage(new KQReactPackage())
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
         mReactRootView.startReactApplication(mReactInstanceManager, "ReactNativeApp", null);
         setContentView(mReactRootView);
+
+        mReactRootView.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                new MessageEmitter().sendMessage(mReactInstanceManager.getCurrentReactContext(), "发送到JS");
+            }
+        }, 3000);
     }
+
 
     @Override
     protected void onPause() {
